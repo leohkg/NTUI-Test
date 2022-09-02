@@ -1,0 +1,102 @@
+@import 'common.less';
+
+.nt-button {
+    height: 32px;
+    padding: 5px 16px;
+    border-radius: 4px;
+    background: @color-white;
+    border: none;
+    cursor: pointer;
+    &>span {
+        display: inline-block;
+        line-height: 22px;
+    }
+}
+
+.nt-button-large {
+    height: 40px;
+    padding: 9px 16px;
+}
+.nt-button-medium {
+    height: 32px;
+    padding: 5px 16px;
+}
+.nt-button-small {
+    height: 24px;
+    padding: 1px 16px;
+}
+
+.nt-button-primary {
+    background: @color-brand-orange-05-base;
+    color: @color-white;
+    &:hover {
+        background: @color-brand-orange-04;
+    }
+    &:active {
+        background: @color-brand-orange-06;
+    }
+}
+
+.nt-button-info {
+    background: @color-information-05-base;
+    color: @color-white;
+    &:hover {
+        background: @color-information-04;
+    }
+    &:active {
+        background: @color-information-06;
+    }
+}
+
+.nt-button-success {
+    background: @color-success-06-base;
+    color: @color-white;
+    &:hover {
+        background: @color-success-05;
+    }
+    &:active {
+        background: @color-success-07;
+    }
+}
+
+.nt-button-warning {
+    background: @color-warning-05-base;
+    color: @color-white;
+    &:hover {
+        background: @color-warning-04;
+    }
+    &:active {
+        background: @color-warning-06;
+    }
+}
+.nt-button-error {
+    background: @color-error-06-base;
+    color: @color-white;
+    &:hover {
+        background: @color-error-05;
+    }
+    &:active {
+        background: @color-error-07;
+    }
+}
+
+.nt-button-default {
+    background: @color-white;
+    color: @color-neutral-07;
+    border: 1px solid #DCDEE2;
+    &:hover {
+        border: 1px solid @color-brand-orange-04;
+        color: @color-brand-orange-04;
+    }
+    &:active {
+        border: 1px solid @color-brand-orange-06;
+        color: @color-brand-orange-06;
+    }
+}
+
+.nt-button[disabled] {
+    background: @color-neutral-01;
+    color: @color-neutral-04;
+    border: 1px solid @color-neutral-04;
+    cursor: not-allowed;
+}
