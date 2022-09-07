@@ -1,24 +1,23 @@
-# nt-ui
+# NT-UI
 
-## Project setup
-```
-npm install
-```
+### 快速开始
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+#### 1.安装
+
+```bash
+npm i nt-ui
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+#### 2.引入
+```javascript
+// 全部引入
+import 'nt-ui/dist/css/index.css';
+import NTUI from 'nt-ui';
+Vue.use(NTUI);
+
+// 按需引入
+import 'nt-ui/dist/css/button.css';
+import { Button } from 'nt-ui';
+Vue.use(Button);
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
