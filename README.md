@@ -54,7 +54,7 @@ src/                    # 源码
   └── index.html        # 入口 HTML 文件
 ```
 ## 开发规范
-   1. 请使用 ESLint 进行代码质量检查。
+   1. **请使用 ESLint 进行代码质量检查。**
    2. **命名**
       - **组件命名**
          - **单词拼写**：使用完整的单词，不要使用缩写（除非缩写是公认的）如: 使用NavigationBar而不是NavBar
@@ -63,5 +63,14 @@ src/                    # 源码
       - **变量和方法命名**
          - **camelCase**：如：`myVariable`、`myFunction()`
          - **动词开头**：如：`getUserData、fetchPosts`
+      - **样式命名**
+         - **BEM**：如：`.block__element--modifier`
+      - **路由命名**
+         - **kebab-case**：如：`/my-route`
+      - **常量命名**
+         - **全大写加下划线**：如：`MY_CONSTANT`
+   3. **其他注意事项**
+      - **避免魔法数字**: 使用有意义的变量名代替魔法数字。如：`const MAX_COUNT = 10;`
+      - **注释**：为复杂的逻辑添加注释，解释代码的意图。
 
 
