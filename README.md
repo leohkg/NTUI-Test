@@ -2,7 +2,7 @@
 # 项目简介
 
 这是一个 Vue 3 模板项目。
-2025-01-16 删除多余vue文件，新增 css 基础样式文件
+- 2025-01-16 删除多余vue文件，新增 css 基础样式文件
 ## 技术栈
 - Vue 3
 - Vite
@@ -25,7 +25,9 @@
    ```sh
    npm run lint
 
-## 文件夹结构
+## 目录结构
+   - **按功能分组**：将组件按功能分组存放在文件夹中。例如，将所有用户相关的组件放在/components/user/文件夹中。
+   - **保持简洁**：尽量保持目录结构的简洁性，不要嵌套太多层
 ```plaintext
 src/                    # 源码
   ├── assets/           # 静态资源会编译进 `dist`，引入时使用相对路径
@@ -52,9 +54,14 @@ src/                    # 源码
   └── index.html        # 入口 HTML 文件
 ```
 ## 开发规范
-   - 请使用 ESLint 进行代码质量检查。
-   - 命名
-      - 组件名：使用大驼峰命名法，如：`MyComponent`
-      - 文件命名：使用小驼峰命名法，如：`myComponent.ts`
+   1. 请使用 ESLint 进行代码质量检查。
+   2. **命名**
+      - **组件命名**
+         - **单词拼写**：使用完整的单词，不要使用缩写（除非缩写是公认的）如: 使用NavigationBar而不是NavBar
+         - **PascalCase**：如：`MyComponent`
+      - **文件命名**：使用小驼峰命名法，如：`myComponent.ts`
+      - **变量和方法命名**
+         - **camelCase**：如：`myVariable`、`myFunction()`
+         - **动词开头**：如：`getUserData、fetchPosts`
 
 
