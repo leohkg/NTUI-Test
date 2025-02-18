@@ -1,6 +1,7 @@
 import './assets/styles/main.css'
 
 import 'vuetify/styles'
+import './assets/styles/changeVuetify.css'
 import vuetify from './assets/plugins/vuetify.ts'
 
 import { createApp } from 'vue'
